@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance</title>
+</head>
+<body>
+    <h1>Student Attendance System</h1>
+    
+    <form action="{{ url_for('submit') }}" method="POST">
+        <label for="student_name">Name:</label>
+        <input type="text" id="student_name" name="student_name" required><br>
+        
+        <label for="roll_number">Roll Number:</label>
+        <input type="text" id="roll_number" name="roll_number" required><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
